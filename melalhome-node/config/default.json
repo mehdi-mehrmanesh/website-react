@@ -1,0 +1,6 @@
+{
+  "jwtPrivateKey": "unsecureKey",
+  "db": "mongodb://db:27017/melall",
+  "port": "3001",
+  "requiresAuth": true
+}

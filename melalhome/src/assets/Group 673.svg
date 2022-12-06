@@ -1,0 +1,14 @@
+<svg id="Group_673" data-name="Group 673" xmlns="http://www.w3.org/2000/svg" width="26.013" height="26.013" viewBox="0 0 26.013 26.013">
+  <g id="vuesax_linear_hospital" data-name="vuesax/linear/hospital" transform="translate(0)">
+    <g id="hospital" transform="translate(0 0)">
+      <path id="Vector" d="M0,0H21.678" transform="translate(2.168 23.845)" fill="#1a1a1a" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M15.174,0H4.336C1.084,0,0,1.94,0,4.336V21.678H19.51V4.336C19.51,1.94,18.426,0,15.174,0Z" transform="translate(3.252 2.168)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="Group" transform="translate(13.007 2.917)">
+        <path id="Vector-3" data-name="Vector" d="M0,0V19.984" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="Vector-4" data-name="Vector" d="M0,0H26.013V26.013H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+  <path id="Vector-5" data-name="Vector" d="M0,0A4.01,4.01,0,0,1,1.541,1.36a.978.978,0,0,1,0,1.084A4.01,4.01,0,0,1,0,3.8" transform="translate(15.821 14.169) rotate(-90)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <path id="Vector-6" data-name="Vector" d="M0,3.8a4.01,4.01,0,0,0,1.541-1.36.978.978,0,0,0,0-1.084A4.01,4.01,0,0,0,0,0" transform="translate(9.714 12.465) rotate(90)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,195 @@
+.sa_hero_container{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    font-family: 'Yekan';
+    padding: 40px;
+    background:  url('../../../public/ss.png') no-repeat;
+    background-size: contain;
+   
+
+}
+.sa_hero_container h1{
+    margin: 0;
+}
+.sa_hero_container h2{
+    font-weight: 100;
+}
+.sa_hero_container button{
+    background-color:rgba(83, 60, 221, 1);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-family: 'Yekan';
+    cursor: pointer;
+    height: 56px;
+    width: 194px;
+    font-size: 21px;
+    position: relative;
+}
+/* .sa_hero_container button:after{
+    content: '+';
+    display: block;
+    width: 10px;
+    height: 10px;
+    font-size: 30px;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+
+} */
+
+.sa_cat_container{
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    margin: 50px 0;
+}
+.sa_cat_container a{
+    flex-grow: 1;
+}
+.sa_cat_container a:hover .each_cat{
+    background-color: rgba(83, 60, 221, 1);
+    border: 1px solid rgba(83, 60, 221, 1);
+    transition: 1s all;
+}
+.sa_cat_container a:hover .each_cat .circle{
+    background-color: #fff;
+}
+
+
+.sa_cat_container a:hover .each_cat p{
+    color:#fff;
+}
+.sa_cat_container a:nth-child(2){
+    margin: 0 15px;
+}
+
+.sa_cat_container .each_cat{
+    border: 1px solid lightgray;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    height: 100%;
+
+
+}
+.sa_cat_container .each_cat .circle{
+    display: flex;
+    width: 74px;
+    height: 74px;
+    justify-content: center;
+    align-items: center;
+    background-color: #edebfa;
+    border-radius: 100%;
+
+}
+.sa_cat_container .each_cat h6{
+    color: #000;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.sa_post_container{
+    display: block;
+    background-color: #f6f8fa;
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.sa_post_container > p{
+    font-size: 24px;
+}
+
+.sa_each_post_card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+.sa_each_post_card img{
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+.sa_each_post_card_detail{
+    text-align: right;
+
+}
+
+.sa_cat_container .each_cat .circle + p{
+    font-size: 24px;
+}
+
+.experts_container{
+    margin-bottom: 30px; 
+    background-color: #f6f8fa;
+    padding: 25px 20px;
+
+}
+
+.experts_container .each_card_container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.experts_container .each_card{
+    width: 270px;
+    height: 270px;
+    background-color: #f6f8fa;
+    /* border: 1px solid lightgrey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+
+}
+
+
+
+.experts_container .each_card .circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.experts_container .each_card_container p{
+    font-size: 25px;
+    font-weight: 100;
+    
+}
+
+.experts_container h5{
+    font-size: 25px;
+    font-weight: 100;
+    margin: 25px 0;
+ }
+
+ .gallary{
+    margin-bottom: 30px;
+ }
+
+ .gallary h5{
+    font-size: 25px;
+    font-weight: 100;
+ }
+
+ .sa_post_container img{
+    height: 190px!important;
+ }

@@ -1,0 +1,10 @@
+<svg id="vuesax_linear_buliding" data-name="vuesax/linear/buliding" xmlns="http://www.w3.org/2000/svg" width="26.013" height="26.013" viewBox="0 0 26.013 26.013">
+  <g id="buliding" transform="translate(0 0)">
+    <path id="Vector" d="M0,0H21.678" transform="translate(2.168 23.845)" fill="#1a1a1a" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M15.174,0H4.336C1.084,0,0,1.94,0,4.336V21.678H19.51V4.336C19.51,1.94,18.426,0,15.174,0Z" transform="translate(3.252 2.168)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H5.964" transform="translate(10.025 17.884)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H18.421" transform="translate(3.252 13.007)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-5" data-name="Vector" d="M0,0H5.964" transform="translate(10.025 8.129)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-6" data-name="Vector" d="M0,0H26.013V26.013H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

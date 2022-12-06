@@ -1,0 +1,27 @@
+.footer_container{
+    display: flex;
+    height: 100px;
+    background-color:#f6f8fa;
+    flex-direction: column;
+    padding: 0 48px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer_container h5{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+.footer_container .links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

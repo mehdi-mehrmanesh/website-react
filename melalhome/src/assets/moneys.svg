@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.987" height="24" viewBox="0 0 21.987 24">
+  <g id="moneys" transform="translate(-108 -316)">
+    <g id="Group" transform="translate(109.567 319.52)">
+      <path id="Vector" d="M16.115,4.4V9.55c0,3.08-1.612,4.4-4.031,4.4H4.031a4.925,4.925,0,0,1-1.173-.13,3.328,3.328,0,0,1-.65-.19C.834,13.07,0,11.77,0,9.55V4.4C0,1.32,1.612,0,4.031,0h8.053A3.577,3.577,0,0,1,16,3.12,7.874,7.874,0,0,1,16.115,4.4Z" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M16,4.28V9.43c0,3.08-1.612,4.4-4.031,4.4H3.921A4.755,4.755,0,0,1,2.1,13.51,3.45,3.45,0,0,1,0,10.7a4.925,4.925,0,0,0,1.173.13H9.225c2.419,0,4.031-1.32,4.031-4.4V1.28A6.891,6.891,0,0,0,13.146,0C14.887.4,16,1.74,16,4.28Z" transform="translate(2.859 3.12)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <path id="Vector-3" data-name="Vector" d="M0,0H21.987V24H0Z" transform="translate(108 316)" fill="none" opacity="0"/>
+  </g>
+</svg>

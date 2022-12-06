@@ -1,0 +1,53 @@
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar .logo h6{
+    margin: 0;
+    font-size: 23px;
+    font-weight: 100;
+
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li{
+    margin-left: 30px;
+    font-size: 18px;
+
+}
+.navbar ul li:hover{
+    color: #4D39E3;
+}
+
+.active{
+    color: #4D39E3;
+}
+
+.badgeReceived{
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    top: -15px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

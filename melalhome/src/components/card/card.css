@@ -1,0 +1,61 @@
+
+
+
+.each-item{
+    display: flex;
+    height: 176px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+
+  }
+  
+  
+  
+  .each-item .right{
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+
+  }
+
+ 
+  .each-item .right div{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+
+  .left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+  }
+
+  .card_part2 span{
+    margin-left: 10px;
+  }
+
+  .badgePostType{
+    background-color: #4d39e3;
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 14px;
+    right: 0;
+    top: 0;
+  }
+
+
