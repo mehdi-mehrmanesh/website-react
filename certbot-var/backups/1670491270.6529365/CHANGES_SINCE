@@ -1,0 +1,4 @@
+-- Deployed ACME Certificate --
+Changed vhost at /etc/nginx/conf.d/api.melalhome.ir.conf with addresses of 443 ssl, 80
+	ssl_certificate /etc/letsencrypt/live/api.melalhome.ir/fullchain.pem
+	ssl_certificate_key /etc/letsencrypt/live/api.melalhome.ir/privkey.pem

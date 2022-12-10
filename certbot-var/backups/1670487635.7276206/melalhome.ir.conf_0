@@ -1,0 +1,11 @@
+server {
+  server_name www.melalhome.ir melalhome.ir;
+     add_header Access-Control-Allow-Origin *;
+     add_header Strict-Transport-Security "max-age=63072000" always;
+     charset      utf-8;
+  location / {
+	proxy_pass http://front:3000;
+  }
+
+}
+

@@ -1,58 +1,47 @@
 version: '3'
 services:
   db:
-   image: mongo:4.2.23-bionic
-   container_name: db
-   restart: unless-stopped
+    image: mongo:4.2.23-bionic
+    #container_name: db
+    restart: unless-stopped
   front:
-    container_name: front
+    env_file:
+       - ./melalhome/.env
+   #container_name: front
     build: ./melalhome
-    # ports:
-    #   - 3000:3000
+    ports:
+       - 3000:3000
+   # volumes:
+   #    - ./melalhome:/work
+    restart: always
     restart: unless-stopped
   api:
-    container_name: api
+    #container_name: api
     build: ./melalhome-node
-    # ports:
-    #   - 3001:3001
+    ports:
+       - 3001:3001
     volumes:
-      - /storage:/work/public/files/
+    #  - ./melalhome-node:/work
+      - ./storage:/work/public/files
     restart: always
     # command: node index.js
   webserver:
-    image: nginx:mainline-alpine
-    container_name: webserver
+    image: nginx:1.23
+    #container_name: webserver
     restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
       - ./nginx-conf:/etc/nginx/conf.d
-      - certbot-etc:/etc/letsencrypt
-      - certbot-var:/var/lib/letsencrypt
+      - ./certbot-etc:/etc/letsencrypt
+      - ./certbot-var:/var/lib/letsencrypt
+      - ./storage:/work
+      - ./melalhome:/work
+    restart: always
     depends_on:
       - front
       - api
-  certbot:
-    image: certbot/certbot
-    container_name: certbot
-    volumes:
-      - certbot-etc:/etc/letsencrypt
-      - certbot-var:/var/lib/letsencrypt
-      - web-root:/var/www/html
-    depends_on:
-      - webserver
-    command: certonly --webroot --webroot-path=/var/www/html --email sammy@melalhome.ir --agree-tos --no-eff-email --staging -d melalhome.ir  -d www.melalhome.ir
-
-volumes:
-  certbot-etc:
-  certbot-var:
-  web-root:
-    driver: local
-    driver_opts:
-      type: none
-      device: /home/sammy/node_project/views/
-      o: bind
-networks:
-  app-network:
-    driver: bridge 
+#networks:
+#  app-network:
+#    driver: bridge 

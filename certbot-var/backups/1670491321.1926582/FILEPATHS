@@ -1,0 +1,5 @@
+/etc/letsencrypt/options-ssl-nginx.conf
+/etc/nginx/nginx.conf
+/etc/nginx/conf.d/api.melalhome.ir.conf
+/etc/nginx/mime.types
+/etc/nginx/conf.d/melalhome.ir.conf

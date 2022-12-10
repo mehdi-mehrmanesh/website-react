@@ -1,0 +1,35 @@
+server {
+  server_name www.melalhome.ir melalhome.ir;
+     add_header Access-Control-Allow-Origin *;
+     add_header Strict-Transport-Security "max-age=63072000" always;
+     charset      utf-8;
+  location / {
+	proxy_pass http://front:3000;
+  }
+
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/melalhome.ir/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/melalhome.ir/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+    if ($host = www.melalhome.ir) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+    if ($host = melalhome.ir) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+  server_name www.melalhome.ir melalhome.ir;
+    listen 80;
+    return 404; # managed by Certbot
+
+
+}

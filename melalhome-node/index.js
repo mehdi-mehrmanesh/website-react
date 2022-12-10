@@ -276,7 +276,7 @@ app.get('/full_mortgage/postdetail',async (req, res, next) => {
       res.status(200).json({
         status: "success",
         message: "File created successfully!!",
-        url : 'http://localhost:3001/'+ req.file.filename
+        url : 'https://api.melalhome.ir/'+ req.file.filename
       });
     } catch (error) {
       res.json({
