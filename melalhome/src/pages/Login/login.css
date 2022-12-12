@@ -57,4 +57,6 @@
 
     
 }
-
+.login_each_input_wrapper small{
+    color: red;
+}

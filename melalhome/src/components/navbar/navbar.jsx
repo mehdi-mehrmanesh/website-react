@@ -1,46 +1,55 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import { Fragment } from "react";
-import {  NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Slant as Hamburger } from 'hamburger-react'
+
+import MediaProvider from "../mediaProvider/media";
 import { e2p } from "../utils/convertor";
 import './navbar.css'
+import NavbarLinks from "./navbarLinks";
 
 function Navbar({ user, postLength}) {
+    const [navbarOpen, setNavbarOpen] = useState(false)
+    const {pathname} = useLocation();
+    const [isOpen, setOpen] = useState(false)
 
-    console.log(postLength)
+    useEffect(() => {
+        setNavbarOpen(false);
+        setOpen(false)
+    }, [ pathname ]);
+
+    // const handleToggle = () => {
+    //     setNavbarOpen(!navbarOpen)
+    // }
+
     return (
-        <Fragment>
-            <section className="navbar">
-                <ul>
+        <MediaProvider>
+            <Fragment>
+                <section className="navbar">
+                    {window.matchMedia('(max-width: 1000px)').matches ? (     
+                        <>
+                            {/* <button >{navbarOpen ? 'ٓX' : '-'}</button> */}
+                            <Hamburger color="#000" toggled={isOpen} toggle={setOpen}  size={20} onToggle={toggled => {
+                                toggled ? setNavbarOpen(true) : setNavbarOpen(false)
+                            }}/>
+                        </>                 
+                    ) : (
+                      <NavbarLinks user={user}/>
+                    )}
+
                     
-                        <Fragment>
-                            <NavLink to="/" exact><li>خانه</li></NavLink>
-                            <NavLink to="/sale"><li>خرید خانه</li></NavLink>
-                            <NavLink to="/rent"><li>اجاره خانه</li></NavLink>
-                            <NavLink to="/mortgage"><li>رهن کامل</li></NavLink>
-                            <NavLink to="/create-post"><li>افزودن آگهی جدید</li></NavLink> 
+                    <div className="logo">
+                        <h6>آژانس املاک ملل</h6>
+                        {/* <img src="./logo.png" alt="" /> */}
+                    </div>       
 
-                            {user && (
-                                <>
-                                    <NavLink to="/received">
-                                         <li>آگهی های دریافت شده</li>
-                                    </NavLink>
-                                    <NavLink to="/profile"><li>{user.name}</li></NavLink>
-                                    <NavLink to="/logout"><li>خروج از حساب</li></NavLink>
-                                </>
-                            )}
+                </section>
 
-
-
-
-                        </Fragment>
-                </ul>
-                
-                <div className="logo">
-                    <h6>آژانس املاک ملل</h6>
-                    <img src="./logo.png" alt="" />
-                </div>       
-
-            </section>
-        </Fragment>
+                {navbarOpen ? (<div className="hamburger_menu"><NavbarLinks user={user}/></div>) : null}
+            </Fragment>
+        </MediaProvider>
+        
       );
 }
 

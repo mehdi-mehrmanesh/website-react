@@ -41,9 +41,9 @@ function Rents({location}) {
            <Search />
            <div className="cardsWrapper">
             { loading ? <ReactLoading type='bubbles' color='#533cdd' className="loading_container"/> : null}
-            { rent.length !== 0 ? rent.map((item,i) => <Link key={i} to={`/post-detail/${item._id}/${item.post_type}`}><Card
+            {rent.map((item,i) => <Link key={i} to={`/post-detail/${item._id}/${item.post_type}`}><Card
                    cardData={item}
-                /></Link>  ) : null}
+                /></Link>  )}
            </div>
            <Pagination itemsCount={rents.length} pageSize={pageSize} currentPage={currentPage} onPageChange={handlePageChange}/>
         </Fragment>

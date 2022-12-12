@@ -8,7 +8,7 @@
     padding: 40px;
     background:  url('../../../public/ss.png') no-repeat;
     background-size: contain;
-   
+   position: relative;
 
 }
 .sa_hero_container h1{
@@ -31,6 +31,13 @@
     width: 194px;
     font-size: 21px;
     position: relative;
+}
+
+.sa_hero_container button:hover{
+    background-color:#fff;
+    border: 1px solid rgba(83, 60, 221, 1);
+    color: rgba(83, 60, 221, 1);
+    transition: all 0.5s;
 }
 /* .sa_hero_container button:after{
     content: '+';
@@ -110,6 +117,7 @@
 
 .sa_post_container > p{
     font-size: 24px;
+
 }
 
 .sa_each_post_card{
@@ -130,6 +138,7 @@
 
 .sa_cat_container .each_cat .circle + p{
     font-size: 24px;
+    margin: 0;
 }
 
 .experts_container{

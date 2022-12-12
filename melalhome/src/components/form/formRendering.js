@@ -5,7 +5,6 @@ import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import ReactLoading from "react-loading";
 import './formRendering.css';
 function FormRendering({formdata, change, images, loading, error}) {
-
     const [selectedDate, setSelectedDate] = useState(null);
     const translateError = (errorType) => {
         switch(errorType){

@@ -43,9 +43,9 @@ function Sale({location}) {
         <Search />
         <div className="cardsWrapper">
         {loading ? (<ReactLoading type='bubbles' color='#533cdd' className="loading_container"/>) : null} 
-            {sale.length !== 0 ? sale.map((item,i) => <Link  key={i}  to={`/post-detail/${item._id}/${item.post_type}`}><Card
+            {sale.map((item,i) => <Link  key={i}  to={`/post-detail/${item._id}/${item.post_type}`}><Card
                     cardData = {item}
-                /></Link>  ) : <h4>داده ای برای نمایش وجود ندارد</h4>}
+                /></Link>  )}
            </div>
            <Pagination itemsCount={sales.length} pageSize={pageSize} currentPage={currentPage} onPageChange={handlePageChange}/>
         </> 
