@@ -40,9 +40,9 @@ function Mortgage({location}) {
        <Search />
          <div className="cardsWrapper">
             {loading ? (<ReactLoading type='bubbles' color='#533cdd' className="loading_container"/>) : null} 
-            {mortgage.length !==0 ? mortgage.map((item,i) => <Link to={`/post-detail/${item._id}/${item.post_type}`}><Card
+            {mortgage.map((item,i) => <Link to={`/post-detail/${item._id}/${item.post_type}`}><Card
                     cardData={item}
-                /></Link>  ) : <h4>داده ای برای نمایش وجود ندارد</h4>}
+                /></Link>  )}
            </div>
            <Pagination itemsCount={mortgages.length} pageSize={pageSize} currentPage={currentPage} onPageChange={handlePageChange}/>
 

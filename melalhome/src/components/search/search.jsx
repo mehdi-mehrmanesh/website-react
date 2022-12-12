@@ -5,20 +5,18 @@ function Search() {
 
 
     const [formElements,setFormElements] = useState({
-        region:{
-            element:'select',
-            value:'',
-            label:true,
-            labelText:'منطقه',
-            config:{
-              name:'region',
-              placeholder:'منطقه',
-              options:[{
-                id:1,
-                name:'منطقه ۱'
-              }]
-            }
-          },
+      region:{
+        element:'input',
+        value:'',
+        label:true,
+        labelText:'منطقه',
+        config:{
+          name:'region',
+          type: 'text',
+          placeholder:'منطقه',
+          options:[]
+        }
+      },
         min_meterage:{
           element:'input',
           value:'',
@@ -85,17 +83,17 @@ function Search() {
               placeholder:'حداکثر اجاره',
             }
         },
-        propertyـcode:{
-            element:'input',
-            value:'',
-            label:true,
-            labelText:'کد ملک',
-            config:{
-              name:'propertyـcode',
-              type:'text',
-              placeholder:'کد ملک',
-            }
-        },
+        // propertyـcode:{
+        //     element:'input',
+        //     value:'',
+        //     label:true,
+        //     labelText:'کد ملک',
+        //     config:{
+        //       name:'propertyـcode',
+        //       type:'text',
+        //       placeholder:'کد ملک',
+        //     }
+        // },
         submit_date:{
             element:'input',
             value:'',

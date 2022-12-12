@@ -33,14 +33,14 @@ function Home() {
 
     },[])
 
-    console.log(posts)
     
     return (
         <Fragment>
             
             <div className="sa_hero_container">
-                <h1>انتخاب خانه  <br />هوشمندتر از همیشه</h1>
-                <h2>ما شما را در خرید,اجاره یا فروش ملکتان یاری میکنیم</h2>
+                <div className="layer"></div>
+                <h1 style={{zIndex:'1'}}>انتخاب خانه  <br />هوشمندتر از همیشه</h1>
+                <h2 style={{zIndex:'1'}}>ما شما را در خرید,اجاره یا فروش ملکتان یاری میکنیم</h2>
                 <Link to="/create-post"><button> + ثبت آگهی</button></Link>
             </div>
 
@@ -80,11 +80,25 @@ function Home() {
                 <p>جدیدترین آگهی ها</p>
                 <Swiper
                    autoplay
-                    slidesPerView={4}
+                    slidesPerView={1}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
                     }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                          },
+                          768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                          },
+                          1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                          },
+                      }}
                     modules={[Pagination,Autoplay]}
                     className="mySwiper"
                     >
@@ -138,11 +152,25 @@ function Home() {
                 <h5>گالری تصاویر</h5>
                 <Swiper
                     autoplay
-                    slidesPerView={3}
-                    spaceBetween={10}
+                    slidesPerView={1}
+                    spaceBetween={20}
                     pagination={{
                         clickable: true,
                     }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                          },
+                          768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                          },
+                          1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                          },
+                      }}
                     modules={[Pagination,Autoplay]}
                     className="mySwiper2"
                     >                       

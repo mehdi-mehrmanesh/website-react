@@ -131,7 +131,7 @@ function CreatePost2({user}) {
             config:{
               name:'meterage',
               type:'text',
-              placeholder:'',
+              placeholder:'۱۰۰',
             }
         },
         floor_count:{
@@ -267,38 +267,18 @@ function CreatePost2({user}) {
             }
         },
         age:{
-            element:'select',
-            value:'',
-            label:true,
-            labelText:'سال ساخت',
-            config:{
-              name:'age',
-              type:'text',
-              placeholder:'',
-              options:[
-                {
-                    name:"1401",
-                    id:"1401"
-                },
-                {
-                    name:"1400",
-                    id:"1400"
-                },
-                {
-                    name:"1399",
-                    id:"1399"
-                },
-                {
-                    name:"1398",
-                    id:"1398"
-                },
-                {
-                    name:"1397",
-                    id:"1397"
-                }
-            ]
-            }
+          element:'input',
+          value:'',
+          label:true,
+          labelText:'سال ساخت',
+          config:{
+            name:'age',
+            type:'text',
+            placeholder:'۱۴۰۱',
+            options:[]
+          }
         },
+        
         floorـcovering:{
             element:'select',
             value:'',

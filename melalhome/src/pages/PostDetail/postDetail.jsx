@@ -97,8 +97,8 @@ function PostDetail({match, user, history}) {
          : 
          <> 
          {user && (<div className="actionButtonAdmin_container">
-                <button className="delete" onClick={deletePost}>حذف آگهی</button>
-                <button className="publish" onClick={publishPost}>انتشار آگهی</button>
+                {rents.is_published ? null : (<button className="publish" onClick={publishPost}>انتشار </button>) }
+                <button className="delete" onClick={deletePost}>حذف </button>
             </div>)}
          <div className="container text-right rtl">
             {/* {user && (<div className="actionButtonAdmin_container">
