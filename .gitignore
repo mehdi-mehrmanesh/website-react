@@ -1,0 +1,7 @@
+storage/*
+docker-compose.yml
+certbot-etc/*
+certbot-var/*
+melelhome/Dockerfile
+melalhome-node/Dockerfile
+nginx-conf
